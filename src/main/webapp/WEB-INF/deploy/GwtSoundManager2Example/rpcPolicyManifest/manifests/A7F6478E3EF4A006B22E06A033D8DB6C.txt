@@ -1,0 +1,2 @@
+serviceClass: com.chj.client.GreetingService
+path: E09CC980CC31CC0F6D891673CD3CC875.gwt.rpc
