@@ -20,8 +20,8 @@ public class ClientJukebox {
 
 	Boolean isPaused = false;
 	
+	/* These should be injected with something like GIN */
 	public ClientJukebox(SoundFactory soundFactory, final JukeboxView view){
-		/* This should be injected with something like GIN */
 		this.soundFactory = soundFactory;
 		this.view = view;
 		soundFactory.onStartup(new Callback(){
@@ -35,9 +35,7 @@ public class ClientJukebox {
 
 			public void execute() {
 				view.getInfo().setInnerText("SoundManager Encountered an error while loading");
-				
 			}
-			
 		});
 		
 		soundFactory.setPlayingCallback(new PlayingCallback(){

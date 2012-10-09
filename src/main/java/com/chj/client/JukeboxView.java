@@ -7,9 +7,9 @@ import com.google.gwt.user.client.ui.RootPanel;
 
 public class JukeboxView {
 
-	final Button playButton = new Button("play");
-	final Button stopButton = new Button("stop");
-	final Button nextButton = new Button("next");
+	final Button playButton = new Button("Play");
+	final Button stopButton = new Button("Stop");
+	final Button nextButton = new Button("Next");
 	final Element info = DOM.getElementById("infoFieldContainer");
 
 	public JukeboxView(){
