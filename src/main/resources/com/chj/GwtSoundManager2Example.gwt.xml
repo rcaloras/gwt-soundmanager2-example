@@ -15,6 +15,11 @@
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
   <!-- Other module inherits                                      -->
+   <inherits name="GwtSoundManager2" />
+  
+  
+  
+  
 
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.chj.client.GwtSoundManager2Example' />

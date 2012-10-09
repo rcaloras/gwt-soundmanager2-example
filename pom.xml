@@ -19,8 +19,18 @@
     <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  <repositories>
+     <repository>
+        <id>gwt-soundmanager2-releases</id>
+        <url>https://raw.github.com/rcaloras/rcaloras-mvn-repo/master/releases</url>
+    </repository>
+</repositories>
   <dependencies>
+     <dependency>
+         <groupId>com.chj</groupId>
+         <artifactId>gwt-soundmanager2</artifactId>
+         <version>0.1.1</version>
+      </dependency>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-servlet</artifactId>
@@ -69,8 +79,6 @@
           <execution>
             <goals>
               <goal>compile</goal>
-              <goal>test</goal>
-              <goal>i18n</goal>
               <goal>generateAsync</goal>
             </goals>
           </execution>
