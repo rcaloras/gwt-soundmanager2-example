@@ -28,6 +28,7 @@ public class ClientJukebox {
 
 			public void execute() {
 				view.setButtonsEnabled();
+				nextSong();
 			}
 			
 		});

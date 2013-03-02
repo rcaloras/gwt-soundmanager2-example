@@ -2,6 +2,7 @@ package com.chj.client.sound;
 
 import java.util.ArrayList;
 
+
 import com.chj.gwt.client.soundmanager2.Callback;
 import com.chj.gwt.client.soundmanager2.SMSound;
 import com.chj.gwt.client.soundmanager2.SoundManager;
@@ -12,7 +13,7 @@ public class SMSoundFactory implements SoundFactory {
 
 	/*SoungManager and player related variables*/
 	//SoundManger to play our sound
-	private static SoundManager sm;
+	private SoundManager sm;
 
 
 	/* The queue of requests */
@@ -22,7 +23,10 @@ public class SMSoundFactory implements SoundFactory {
 
 
 	public SMSoundFactory(){
-		sm = SoundManager.quickStart();
+		sm = SoundManager.getInstance();
+		sm.setFlashVersion(9);
+		sm.setDebugMode(true);
+		sm.beginDelayedInit();
 	}
 
 
