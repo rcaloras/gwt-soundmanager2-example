@@ -23,10 +23,7 @@ public class SMSoundFactory implements SoundFactory {
 
 
 	public SMSoundFactory(){
-		sm = SoundManager.getInstance();
-		sm.setFlashVersion(9);
-		sm.setDebugMode(true);
-		sm.beginDelayedInit();
+		sm = SoundManager.quickStart();
 	}
 
 
